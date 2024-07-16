@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="./css/setting.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class='header' style=" margin-top: 10px ;">
+        <div class='header__left'>
+            <img class='header__logo' src='./images/logo.jpg' />
+            <h1 class='header_title1'> Culinary </h1>
+            <h1 class='header_title2'>Connect</h1>
+        </div>
+    
+        <div class='header__right'>
+            <div class='headeroption'>
+                <img src="./images/homeicon.png" alt="homeicon" class="headeroption_icon">
+                <a href="./main.html"><h3>Home</h3></a>
+                
+            </div>
+    
+            <div class='headeroption'>
+                <img src="./images/missionicon.png" alt="our mission" class="headeroption_icon">
+                <h3>Our Mission</h3>
+            </div>
+    
+            <div class='headeroption'>
+                <img src="./images/locatefoodicon.png" alt="Locate Food" class="headeroption_icon">
+                <a href="../tg/index.html"><h3>Locate Food</h3></a>
+            </div>
+    
+            <div class='headeroption'>
+                <img src="./images/loginicon.png" alt="Login Avatar" class="headeroption_icon">
+                <a href="./index.html"><h3>Dashboard</h3></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+  <div class="container">
+    <h1>Settings</h1>
+    <div class="tabs">
+      <button class="tab-button active">Profile</button>
+      <button class="tab-button">Email</button>
+      <button class="tab-button">Password</button>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane active">
+        <h2>Update Profile</h2>
+        <form class="nameForm"  enctype="multipart/form-data" method="post">
+          <label for="name">Current User Name:</label>
+          <input class="currentName" type="text" id="name" name="name" placeholder="Enter your current user name">
+          <label for="name">New User Name:</label>
+          <input class="newName" type="text" id="namenew" name="name" placeholder="Enter your new user name">
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+      <div class="tab-pane">
+        <h2>Update Email</h2>
+        <form class="emailForm"  enctype="multipart/form-data" method="post">
+          <label for="email"> Current Email:</label>
+          <input class="currentEmail" type="email" id="email" name="email" placeholder="Enter your current email">
+          <label for="email"> New Email:</label>
+          <input class="newEmail" type="email" id="newemail" name="email" placeholder="Enter your new email">
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+      <div class="tab-pane">
+        <h2>Update Password</h2>
+        <form class="passwordForm"  >
+          <label for="current-password">Current Password:</label>
+          <input class="currentPassword" type="password" id="current-password" name="current-password" placeholder="Enter current password">
+          <label for="new-password">New Password:</label>
+          <input class="newPassword" type="password" id="new-password" name="new-password" placeholder="Enter new password">
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/setting.js"></script>
+</body>
+</html>

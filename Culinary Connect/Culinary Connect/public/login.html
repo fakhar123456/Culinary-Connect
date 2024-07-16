@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Connect - Login</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class='header'>
+            <div class='header__left'>
+                <img class='header__logo' src='images/logo.jpg' />
+                <h1 class='header_title1'> Culinary </h1>
+                <h1 class='header_title2'>Connect</h1>
+            </div>
+        
+            <div class='header__right'>
+                <div class='headeroption'>
+                    <img src="images/homeicon.png" alt="homeicon" class="headeroption_icon">
+                    <h3>Home</h3>
+                </div>
+        
+                <div class='headeroption'>
+                    <img src="images/missionicon.png" alt="our mission" class="headeroption_icon">
+                    <h3>Our Mission</h3>
+                </div>
+        
+                <div class='headeroption'>
+                    <img src="images/locatefoodicon.png" alt="Locate Food" class="headeroption_icon">
+                    <h3>Locate Food</h3>
+                </div>
+        
+                <div class='headeroption'>
+                    <img src="images/loginicon.png" alt="Login Avatar" class="headeroption_icon">
+                    <h3>Login</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <main class="main_container">
+    <div class="form">
+    <div class="form-group"><h2 class="heading">login</h2></div>
+    <div class="form-group"><input type="email" placeholder="email" autocomplete="off" class="email" required></div>
+    <div class="form-group"><input type="password" placeholder="password" autocomplete="off" class="password" required></div>
+    <button class="submit-btn">log in</button>
+        <p>Don't have an account?<a href="/register" class="link">Register here</a></p>
+    </div></main>
+
+
+
+    <style>
+        .main_container {
+            display: flex;
+            background: url('./images/loginbanner.jpeg.jpg');
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            width: 300px;
+            margin: 50px auto;
+            margin-bottom:200px;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            color: #1a1b77;
+            background-color: rgb(255, 255, 255);
+            transform: scale(105%);
+        
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            margin-top:10px ;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #2756a8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+        .link {
+            margin-top:10px ;
+        }
+        
+.alert-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+    background: rgb(255, 119, 119);
+    border-top: 10px solid rgb(255, 37, 37);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    transition: 1s;
+}
+    </style>
+<script src="js/form.js"></script>
+</body>
+
+</html>

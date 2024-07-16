@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Connect</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links to js files -->
+     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Culinary Connect</h1>
+        <img id="uploadedImage" src="path/to/your/image.jpg" alt="Culinary 
+Connect Image">
+    </header>
+
+    <section>
+        <p>Welcome to Culinary Connect! This website allows donors to 
+donate food for those in need and people who are in need
+            of food to see and go to these locations!</p>
+    </section>
+
+    <div>
+        <label for="imageInput">Image File:</label>
+        <input type="file" id="imageInput" accept="image/*">
+
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter title">
+
+        <label for="descriptionInput">Description:</label>
+        <textarea id="descriptionInput" placeholder="Enter 
+description"></textarea>
+
+        <button id="updateButton">Update Content</button>
+    </div>
+<<<<<<< HEAD
+    <div id="map" style="width: 600px; height: 400px;"></div>
+    <script type="text/javascript">
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        
+
+
+    </script>
+=======
+>>>>>>> 80bf8b3cec13518b40f6df075aca6cb19797b30f
+    <iframe src="https://storage.googleapis.com/maps-solutions-x98fnzrt8a/commutes/btrs/commutes.html"
+        width="1500px" height="850px"
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+</body>
+
+</html>
+

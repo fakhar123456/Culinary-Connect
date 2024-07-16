@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: url('../img/img.webp');
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto', sans-serif;
+}
+
+
+.logout {
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+button:hover{
+text-decoration: underline;
+}
+
+
+.nav-item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.flexbox3{
+    position: fixed;
+    top: 50px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+    backdrop-filter: blur(20px);
+
+}
+.welcome{
+    font-size: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: rgb(18, 18, 100);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.greeting{
+    font-size: 100px;
+    color: rgb(60, 60, 123);
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flexbox2{
+    position: fixed;
+    top: 300px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 183);
+
+}
+
+.donations_av{
+    position: fixed;
+    top: 400px;
+    left: 300px;
+    padding: 20px;
+    background-color: transparent;
+
+    width: 300px;
+    height: 300px;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(23, 23, 70);
+}
+.donations_av:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    backdrop-filter: blur(30px);
+}
+
+.donations_done{
+    position: fixed;
+    top: 400px;
+    left: 900px;
+    padding: 20px;
+    background-color: transparent;
+
+    width: 300px;
+    height: 300px;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(23, 23, 70);
+}
+.donations_done:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    backdrop-filter: blur(30px);
+
+}
+#map{
+    position: fixed;
+    top: 400px;
+    left: 600px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}

@@ -1,0 +1,282 @@
+@keyframes appear {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes header_grow {
+    from {font-size: 1px;}
+    to {font-size: 32px;}
+}
+
+@keyframes title_grow {
+    from {font-size: 1px;}
+    to {font-size: 100px;}
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+}
+
+.header__left {
+    display: flex;
+    width: 50%;
+}
+
+.header__right {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 13%;
+}
+
+.header__logo {
+    object-fit: contain;
+    height: auto;
+    align-items: center;
+    margin-left: 8%;
+    padding: 5px;
+    border-radius: 10px;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.header_title1 {
+    display: flex;
+    color: #1a1b77;
+    margin-left: 2%;
+    align-items: center;
+    animation-name: header_grow;
+    animation-duration: 0.8s;
+}
+
+.header_title2 {
+    display: flex;
+    color: #2756a8;
+    align-items: center;
+    margin-left: 0.8%;
+    animation-name: header_grow;
+    animation-duration: 0.8s;
+}
+
+.headeroption {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+    margin-top: 20px;
+    align-items: center;
+    color: #2756a8;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 83%;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.headeroption_icon {
+    margin-bottom: 1px;
+    color: #1a1b77;
+    width: 30px;
+}
+
+.headeroption:hover {
+    color: #000041;
+    font-size: 100%;
+}
+
+.firstsection {
+    height: 630px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.firstsection > img {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    z-index: 0;
+    object-fit: cover;
+    height: 70%;
+    width: 100vw;
+}
+
+.fs_title {
+    position: absolute;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 3px 3px 20px #030320;
+    font-size: 100px;
+    z-index: 2;
+    top: 20%;
+    animation-name: title_grow;
+    animation-duration: 2s;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    z-index: 2;
+    border: none;
+    top: 60%;
+    height: 27px;
+    width: 480px;
+    border-radius: 60px;
+    background-color: white;
+    box-shadow: 2px 2px 50px black;
+    animation-name: appear;
+    animation-duration: 2s;
+}
+
+.searchbar_input {
+    border: none;
+    height: 27px;
+    width: 480px;
+    border-radius: 60px;
+    font-size: 18px;
+    background-color: white;
+    outline: none;
+}
+
+
+.searchbar_icon {
+    width: 23px;
+    margin-left: 3px;
+    margin-right: 4px;
+}
+
+.searchbar_icon:hover {
+    color: #1a1b77;
+}
+
+
+.aboutus_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.aboutus_title > h1 {
+    font-size: 80px;
+    margin: 30px;
+    margin-bottom: 0px;
+    align-items: center;
+    color: #2756a8;
+}
+
+
+.aboutus_section {
+    height: 730px;
+    display: flex;
+}
+
+
+.aboutus_section_left {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a396f;
+    align-items: center;
+    margin: 60px;
+    border-radius: 50px;
+    flex: 0.8;
+    height: 95%;
+    overflow: scroll;
+}
+
+.aboutus_section_left > h2 {
+    font-size: 35px;
+    color: #dce5f6;
+}
+
+.aboutus_section_left > p {
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 30px;
+    font-size: 27px;
+    color: white;
+    text-align: justify;
+    line-height: 1.7;
+    
+}
+
+.aboutus_section_right {
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    flex: 0.2;
+    margin-right: 40px;
+}
+
+.aboutus_section_right > img {
+    border-radius: 60px;
+}
+
+.second-section {
+    height: fit-content;
+    padding: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: #1a396f;
+}
+.slideshow-container {
+    position: relative;
+    width: 400px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
